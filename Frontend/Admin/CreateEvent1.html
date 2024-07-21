@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap admin template">
+    <meta name="author" content="">
+    
+    <title>Invitify | Create Event</title>
+    
+    <link rel="apple-touch-icon" href="../assets/images/logo.jpg">
+    <link rel="shortcut icon" href="../assets/images/fav.ico">
+    
+    <!-- Stylesheets -->
+     
+    <link rel="stylesheet" href="../global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="../assets/css/site.min.css">
+    
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../global/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="../global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="../global/vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="../global/vendor/intro-js/introjs.css">
+    <link rel="stylesheet" href="../global/vendor/slidepanel/slidePanel.css">
+    <link rel="stylesheet" href="../global/vendor/flag-icon-css/flag-icon.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../global/fonts/web-icons/web-icons.min.css">
+    <link rel="stylesheet" href="../global/fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    <link rel="stylesheet" href="../global/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="../global/fonts/material-design/material-design.min.css">
+    <link rel="stylesheet" href="../global/vendor/footable/footable.core.css">
+    <link rel="stylesheet" href="../assets/examples/css/tables/footable.css">
+    <link rel="stylesheet" href="../global/AutoCompleteSelect/AutoCss.css"/>
+    <link rel="stylesheet" href="../global/vendor/icheck/icheck.css">
+            <link rel="stylesheet" href="../global/vendor/summernote/summernote.css">
+
+
+    <!--[if lt IE 9]>
+    <script src="../global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 10]>
+    <script src="../global/vendor/media-match/media.match.min.js"></script>
+    <script src="../global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Scripts -->
+    <script src="../global/vendor/breakpoints/breakpoints.js"></script>
+    <script src="https://kit.fontawesome.com/15e8ed2b84.js" crossorigin="anonymous"></script>
+    <script>
+      Breakpoints();
+    </script>
+    
+
+  
+  </head>
+  <body class="animsition site-navbar-small page-aside-fixed">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+    
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+          data-toggle="menubar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="hamburger-bar"></span>
+        </button>
+        <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
+          data-toggle="collapse">
+          <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+        </button>
+        <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+          <!-- <img class="navbar-brand-logo" src="../assets/images/logo.jpg" title="AME"> -->
+          <div class="navbar-brand-logo">Invitify</div>
+          
+        </div>
+    
+      </div>
+    
+      <div class="navbar-container container-fluid">
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+          <!-- Navbar Toolbar -->
+          <ul class="nav navbar-toolbar">
+            <li class="nav-item hidden-float" id="toggleMenubar">
+              <a class="nav-link" data-toggle="menubar" href="#" role="button">
+                <i class="icon hamburger hamburger-arrow-left">
+                  <span class="sr-only">Toggle menubar</span>
+                  <span class="hamburger-bar"></span>
+                </i>
+              </a>
+            </li>
+            <li class="nav-item hidden-sm-down" id="toggleFullscreen">
+              <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+                <span class="sr-only">Toggle fullscreen</span>
+              </a>
+            </li>
+      
+          </ul>
+          <!-- End Navbar Toolbar -->
+    
+          <!-- Navbar Toolbar Right -->
+          <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right" style="padding-right: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="scale-up" role="button">
+                  <p id="FullName"></p>
+              </a>
+              <div class="dropdown-menu" role="menu">
+       
+                <div class="dropdown-divider" role="presentation"></div>
+                <a class="dropdown-item logout" href="" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
+              </div>
+            </li>
+          </ul>
+          <!-- End Navbar Toolbar Right -->
+        </div>
+        <!-- End Navbar Collapse -->
+    
+
+      </div>
+    </nav>  
+    
+
+      <div class="site-menubar">
+        <div class="site-menubar-body">
+          <div>
+            <div>
+              <ul class="site-menu" data-plugin="menu">
+                <li class="site-menu-category">Menu</li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="Home.html">
+                    <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
+                    <span class="site-menu-title">Dashboard</span>
+                  </a>
+                </li>
+
+                <li class="dropdown site-menu-item has-sub active">
+                  <a data-toggle="dropdown" href="javascript:void(0)" data-dropdown-toggle="false">
+                    <i class="site-menu-icon  fa-regular fa-calendar" aria-hidden="true"></i>
+                    <span class="site-menu-title">Events</span>
+                    <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="site-menu-scroll-wrap is-list">
+                      <div>
+                        <div>
+                          <ul class="site-menu-sub site-menu-normal-list">
+                            <li class="site-menu-item active">
+                              <a class="animsition-link" href="CreateEvent1.html">
+                                <i class="fa-solid fa-calendar-plus site-menu-icon" aria-hidden="true"></i>
+                                <span class="site-menu-title">Create Event</span>
+                              </a>
+                            </li>
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="Events.html">
+                                <i class="fa-regular fa-calendar-days site-menu-icon" aria-hidden="true"></i>
+                                <span class="site-menu-title">Events List</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+                <li class="dropdown site-menu-item has-sub">
+                  <a data-toggle="dropdown" href="javascript:void(0)" data-dropdown-toggle="false">
+                    <i class="fa-solid fa-address-book site-menu-icon wb-layout" aria-hidden="true"></i>
+                    <span class="site-menu-title">Contacts</span>
+                    <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="site-menu-scroll-wrap is-list">
+                      <div>
+                        <div>
+                          <ul class="site-menu-sub site-menu-normal-list">
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="ContactType.html">
+                                <i class="fa-solid fa-users-line site-menu-icon" aria-hidden="true"></i>
+                                <span class="site-menu-title">Contact Types</span>
+                              </a>
+                            </li>  
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="Contacts.html">
+                                <i class="fa-solid fa-list site-menu-icon" aria-hidden="true"></i>
+                                <span class="site-menu-title">Contacts List</span>
+                              </a>
+                            </li>  
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="Invitees.html">
+                    <i class="fa-solid fa-address-card site-menu-icon" aria-hidden="true"></i>
+                    <span class="site-menu-title">Invitations</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="Properties.html">
+                    <i class="fa-solid fa-gear" aria-hidden="true"></i>
+                    <span class="site-menu-title">Properties</span>
+                  </a>
+                </li>
+       
+              
+               
+                  </ul>
+                </li>
+               
+              </div>  
+            
+            </div>
+          </div>
+        </div> 
+
+
+
+
+         <!-- Modal -->
+       <div class="modal fade modal-primary modal-super-scaled" id="continuemodal" aria-hidden="true" aria-labelledby="examplePositionTop"
+       role="dialog" tabindex="-1">
+       <div class="modal-dialog modal-simple modal-center">
+         <div class="modal-content">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">×</span>
+             </button>
+             <h4 class="modal-title" id="exampleModalTitle">Continue Event Creation</h4>
+           </div>
+           <div class="modal-body">
+            
+            <input type="hidden" id="evid">
+            <input type="hidden" id="evlast">
+
+            <h3>Do you want to continue create event: <span class="text-primary lastevent"></span> you started creating on: <span  class="text-primary" id="lasteventdate"></span>?</h3>
+
+            <h5>Note: if you choosed to create new event, your event <span class="text-primary lastevent"></span> will be deleted.</h5>
+            
+           </div>
+       
+           <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" id="skip">Create New Event</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="continue">Continue Last Event</button>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- End Modal -->
+
+
+          
+
+
+       <!-- Modal -->
+       <div class="modal fade modal-primary modal-super-scaled" id="locationmodal" aria-hidden="true" aria-labelledby="examplePositionTop"
+       role="dialog" tabindex="-1">
+       <div class="modal-dialog modal-simple modal-center modal-lg">
+         <div class="modal-content">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">×</span>
+             </button>
+             <h4 class="modal-title" id="exampleModalTitle">Location Preview</h4>
+           </div>
+           <div class="modal-body">
+            <h3 class="text-center text-primary">If you can see your map here, then you have copied the right iframe</h3>
+            <div id="locationprev" class="text-center"></div>
+           </div>
+       
+           <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Dismiss</button>
+      
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- End Modal -->
+
+
+       
+
+
+        
+    <div class="page">
+    <div class="page-header">
+      <div class="page-title">
+        Create New Event
+      </div>
+    </div>
+    
+      <div class="page-main">
+        <div class="page-header text-center">
+          
+        </div>
+        <div class="page-content">
+    
+
+
+    
+    
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">General Info</h3>
+             
+            </div>
+            <div class="panel-body">
+
+              <div class="example-loading h-150 vertical-align text-center" id="load">
+                <div class="loader vertical-align-middle loader-round-circle"></div>
+              </div>
+
+              <div class="example d-none">
+                <form autocomplete="off">
+                  <div class="row">
+                    <div class="form-group col-md-12">
+                      <label class="form-control-label" for="eventname">Event Name <small class="text-danger">*</small></label>
+                      <input type="text" class="form-control" id="eventname" placeholder="Event Name" />
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <label class="form-control-label" for="country">Country <small class="text-danger">*</small></label>
+                      <select class="form-control countrypicker" id="country"><option value="0">-- Select Country --</option></select>
+                    </div>
+                    
+                    <div class="form-group col-md-6">
+                      <label class="form-control-label" for="state">State <small class="text-danger">*</small></label>
+                     <span id="statespan"><select class="form-control statepicker" id="state"><option value="0">-- Select State --</option></select></span>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                      <label class="form-control-label" for="Address">Address <small class="text-danger">*</small></label>
+                      <input type="text" class="form-control" id="address" placeholder="Address"/>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                      <label class="form-control-label" for="location">Location iframe <small class="text-danger">*</small><br><small><a href="https://www.youtube.com/watch?v=_RPuhfX4d_A" target="_blank"> How to get location iframe from google maps?</a></small></label>
+                      <input type="text" class="form-control" id="location" placeholder="Location iframe" />
+                      <div class="text-center">
+                        <input type="button" class="btn btn-primary" value="Preview" id="preview" />
+                      </div>
+                    </div>
+                   
+
+
+                    <div class="form-group col-md-6">
+                      <label class="form-control-label" for="partic">Number of Participants <small>(optional)</small><br><small> Show your invitees how many participants our event have</small></label>
+                      <input type="number" class="form-control" id="partic" placeholder="Number of Participants"/>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <label class="form-control-label" for="speakers">Number of Speakers <small>(optional)</small><br><small> Show your invitees how many speakers our event have</small></label>
+                      <input type="number" class="form-control" id="speakers" placeholder="Number of Speakers"/>
+                    </div>
+                 
+                    <div class="form-group col-md-12">
+                      <label class="form-control-label" for="domain">Domain <small class="text-danger">*</small><br><small class="text-danger">if you have a registered domain that not shown here <input type="button" class="btn btn-primary btn-xs" value="contact us" id="adddomain"></small></label>
+                      <select id="domain" class="form-control"><option value="0">-- Select Domain --</option></select>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                      <label class="form-control-label" for="summernote">About <small class="text-danger">*</small></label>
+                      <!-- <textarea class="form-control" id="about" placeholder="About" rows="5"></textarea> -->
+                      <div id="summernote"></div>
+                    </div>
+
+
+                  <div class="form-group col-md-12">
+                    <input type="checkbox" id="anon" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                    <label for="anon">Allow anonymous registration <span class="badge badge-pill badge-dark" data-toggle="tooltip" data-placement="top" title="If anonymous registration is enabled, any one with the main event link can register, a contact will be created with his information, and this will count from your contacts limit">?</span></label>
+                  </div>
+                  </div>
+
+             
+                
+                  <div class="form-group form-material text-center">
+                        <button type="button" class="btn btn-labeled btn-primary waves-effect waves-classic" id="next">
+                         Next <span class="btn-label"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></button>
+                  </div>
+                </form>
+              </div>
+
+              
+
+
+            </div>
+          </div>
+
+
+          
+        </div>
+      </div>
+    </div>
+
+   
+    
+   
+    <footer class="site-footer">
+      <div class="site-footer-legal">© 2023 Invitify</div>
+      <div class="site-footer-right">
+        Crafted with <i class="red-600 icon md-favorite"></i> by <a href="mailto:omar.khaled.albeltagy@gmail.com?subject= Invitify Inquiry&body=%0A%0ASent from Invitify">Omar Khaled</a>
+      </div>
+    </footer>
+
+
+    <!-- Core  -->
+    <script src="../global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="../global/vendor/jquery/jquery.js"></script>
+    <script src="../global/vendor/popper-js/umd/popper.min.js"></script>
+    
+    <script src="../global/vendor/bootstrap/bootstrap.js"></script>
+    <script src="../global/vendor/animsition/animsition.js"></script>
+    <script src="../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+    <script src="../global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="../global/vendor/asscrollable/jquery-asScrollable.js"></script>
+    <script src="../global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+    <script src="../global/morris.js-0.5.1/morris.js-0.5.1/morris.js"></script>
+    <script src="../global/raphael-2.3.0/raphael.min.js"></script>
+    <!-- Plugins -->
+    <script src="../global/vendor/switchery/switchery.js"></script>
+    <script src="../global/vendor/intro-js/intro.js"></script>
+    <script src="../global/vendor/screenfull/screenfull.js"></script>
+    <script src="../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+    <script src="../global/fontawesome/js/all.min.js"></script>
+
+
+    <!-- Scripts -->
+    <script src="../global/js/Component.js"></script>
+    <script src="../global/js/Plugin.js"></script>
+    <script src="../global/js/Base.js"></script>
+    <script src="../global/js/Config.js"></script>
+    
+    <script src="../assets/js/Section/Menubar.js"></script>
+    <script src="../assets/js/Section/GridMenu.js"></script>
+    <script src="../assets/js/Section/Sidebar.js"></script>
+    <script src="../assets/js/Section/PageAside.js"></script>
+    <script src="../assets/js/Plugin/menu.js"></script>
+    
+    <script src="../global/js/config/colors.js"></script>
+    <script>Config.set('assets', '../assets');</script>
+    <script src="../global/js/Plugin/panel.js"></script>
+    
+    <!-- Page -->
+    <script src="../assets/js/Site.js"></script>
+    <script src="../global/js/Plugin/asscrollable.js"></script>
+    <script src="../global/js/Plugin/slidepanel.js"></script>
+    <script src="../global/js/Plugin/switchery.js"></script>
+    <script src="../global/vendor/sparkline/jquery.sparkline.min.js"></script>
+    <script src="../global/vendor/chartist/chartist.min.js"></script>
+    <script src="../global/vendor/matchheight/jquery.matchHeight-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="../assets/js/config/tour.js"></script>
+    <script src="../global/vendor/moment/moment.min.js"></script>
+    <script src="../global/vendor/footable/footable.min.js"></script>
+    <script src="../global/AutoCompleteSelect/AutoJs.js"></script>
+    <script src="../global/vendor/icheck/icheck.min.js"></script>
+                <script src="../global/vendor/summernote/summernote.min.js"></script>
+                      <!-- <script src="../global/js/Plugin/summernote.js"></script> -->
+    <script>
+      (function(document, window, $){
+        'use strict';
+    
+        var Site = window.Site;
+        $(document).ready(function(){
+          Site.run();
+
+          //start layout            
+          if (localStorage.getItem("userrole") !== "Admin") {
+            window.open("../notauth.html", "_self")
+          }
+
+          $("#FullName").append(localStorage.getItem("userfullname") + ' <span><i class="icon wb-chevron-down-mini" aria-hidden="true"></i></span>');
+
+          $(".logout").click(function (e) {
+          e.preventDefault();
+
+                window.localStorage.removeItem("userfullname");
+                window.localStorage.removeItem("useremail");
+                window.localStorage.removeItem("userid");
+                window.localStorage.removeItem("userrole");
+
+                window.open("../index.html", "_self")
+        });
+             //end layout
+
+
+             var lastid;
+             var lastname;
+             var laststep;
+
+
+        $("#adddomain").click(function(){
+          window.open('mailto:omar.khaled.albeltagy@gmail.com?subject=Add a registered domain to domains list&body=[DO NOT DELETE THIS LINE] \n Dashboard Link:'+window.location.origin+'');
+        })
+
+
+
+
+        
+
+   
+
+       
+
+
+             $("#preview").click(function(){
+              var i = $("#location").val();
+              $("#locationprev").html(i);
+              $("#locationmodal").modal('show')
+             })
+
+
+
+
+             $("#skip").click(function(){
+              $.ajax({
+                url:"APILINK/TempEvent/DeleteTemp",
+                success:function(res){
+                  if (res == true) {
+
+                sessionStorage.removeItem("IsDate");
+                sessionStorage.removeItem("eventSchedule");
+                sessionStorage.removeItem("eventSpeaker");
+                sessionStorage.removeItem("eventSponsor");
+                sessionStorage.removeItem("eventGallery");
+
+                    window.location.reload();
+                  }
+                }
+              })
+             })
+
+
+             $("#continue").click(function(){
+               sessionStorage.setItem("EventName", lastname);
+               sessionStorage.setItem("EventId", lastid);
+
+               switch (laststep) {
+                case 1:
+                window.open("CreateEvent2.html","_self");
+                break;
+               case 2:
+                var dates = [];
+                $.ajax({
+                  url:"APILINK/TempEvent/GetTempDates/"+lastid,
+                  success:function(res){
+                    $.each(res,function(){
+                      var d = this;
+                      
+                      dates.push(d);
+                    })
+                  }
+                }).then(function(){
+                  sessionStorage.setItem("IsDate",true);
+                  sessionStorage.setItem("Dates",JSON.stringify(dates));
+                  window.open('CreateEvent3.html','_self');
+                })
+                break;
+                case 3:
+                sessionStorage.setItem("IsDate",true);
+                sessionStorage.setItem("eventSchedule",true);
+                window.open('CreateEvent4.html', '_self');
+                break;
+                case 4:
+                sessionStorage.setItem("IsDate",true);
+                sessionStorage.setItem("eventSchedule",true);
+                sessionStorage.setItem("eventSpeaker",true);
+                window.open('CreateEvent5.html',"_self");
+                break;
+                case 5:
+                sessionStorage.setItem("IsDate",true);
+                sessionStorage.setItem("eventSchedule",true);
+                sessionStorage.setItem("eventSpeaker",true);
+                sessionStorage.setItem("eventSponsor",true);
+                window.open('CreateEvent6.html',"_self");
+                break;
+                case 6:
+                sessionStorage.setItem("IsDate",true);
+                sessionStorage.setItem("eventSchedule",true);
+                sessionStorage.setItem("eventSpeaker",true);
+                sessionStorage.setItem("eventSponsor",true);
+                sessionStorage.setItem("eventGallery",true);
+                window.open('CreateEvent7.html',"_self");
+                break;
+                default:
+                  alert("Error")
+                  break;
+               }
+
+
+             })
+
+
+
+             $.ajax({
+              url:"APILINK/Event/CheckEventLimit",
+              success:function(res){
+                if (res == true) {
+                  $.ajax({
+                    url:"APILINK/TempEvent/CheckEventsCreation",
+                    success:function(res){
+                      if (res == false) {
+                        $.ajax({
+                          url:"APILINK/TempEvent/GetDomains",
+                          success:function(dom){
+                            $.each(dom,function(){
+                              $("#domain").append('<option value="'+this+'">'+this+'</option>')
+                            })
+                            notload()
+                          }
+                        })
+                
+                      }
+                      else{
+                        lastid = res.id;
+                        lastname = res.eventName;
+                        laststep = res.lastStep;
+                        $(".lastevent").text(res.eventName);
+                        $("#lasteventdate").text(res.creationDateTime);
+                        $("#evid").val(res.id);
+                        $("#evlast").val(res.lastStep);
+                        $("#continuemodal").modal('show');
+                      }
+                    }
+                  })
+                }
+                else{
+                  alert(res);
+                  window.open("Home.html","_self");
+                }
+              }
+             })
+
+
+
+
+
+             var states = [];
+
+
+             const sorting = document.querySelector('.statepicker');
+          const commentSorting = document.querySelector('.statepicker');
+          const sortingchoices = new Choices(sorting, {
+            placeholder: false,
+            searchResultLimit: 5,
+            shouldSort: false,
+            searchResultLimit: 10,
+            position: 'down',
+          });
+
+
+
+
+          function load(){
+            $("#load").removeClass('d-none');
+            $(".example").addClass('d-none');
+          }
+
+          
+          function notload(){
+            $("#load").addClass('d-none');
+            $(".example").removeClass('d-none');
+          }
+
+
+
+        $.ajax({
+          url:"APILINK/Country/GetAllCountries",
+          success:function(res){
+            $.each(res,function(){
+              $(".countrypicker").append('<option value="'+this.id+'">'+this.countryName+'</option>')
+            })
+          }
+        }).then(function()
+        {
+          const sorting = document.querySelector('.countrypicker');
+          const commentSorting = document.querySelector('.countrypicker');
+          const sortingchoices = new Choices(sorting, {
+            placeholder: false,
+            searchResultLimit: 50,
+            shouldSort: false,
+            searchResultLimit: 10,
+            position: 'down',
+          });
+        })
+
+        $.ajax({
+          url:"APILINK/Country/GetAllStates",
+          success:function(res){
+            states = res;
+          }
+        })
+
+        $("#country").change(function(){
+
+        $("#statespan").children().remove();
+        $("#statespan").append('<select class="form-control statepicker" id="state"><option value="0">-- Select State --</option></select>');
+          var id = $("#country").children('option:selected').val();
+         $.each(states.filter(a => a.countryId == id),function(){
+          $("#state").append('<option value="'+this.id+'">'+this.stateName+'</option>')
+         })
+         const sorting = document.querySelector('.statepicker');
+          const commentSorting = document.querySelector('.statepicker');
+          const sortingchoices = new Choices(sorting, {
+            placeholder: false,
+            searchResultLimit: 5,
+            shouldSort: false,
+            searchResultLimit: 10,
+            position: 'down',
+          });
+        })
+
+
+        $("#next").click(function(){
+
+          load();
+
+
+          $("#eventname").removeAttr('style');
+          $("#state").removeAttr('style');
+          $("#address").removeAttr('style');
+          $("#location").removeAttr('style');
+          $("#domain").removeAttr('style');
+          $(".note-editable").removeAttr('style');
+
+          var ch = document.getElementById("anon");
+
+
+          var name = $("#eventname").val();
+          var state = $("#state").children('option:selected').val();
+          var address = $("#address").val();
+          var location = $("#location").val();
+          var partic = $("#partic").val();
+          var speakers = $("#speakers").val();
+          var domain = $("#domain").children('option:selected').val();
+          var about = $(".note-editable").html();
+          var anon = "";
+
+          if (ch.checked) {
+           anon = true;
+          }
+          else{
+            anon = false;
+          }
+
+
+
+
+          if (name == null || name == "" || name == undefined || state == 0 || state == "0" || address == "" || address == null || address == undefined || location == null || location == "" || location == undefined || domain == "0" || domain == 0 || about == null || about == "" || about == undefined) {
+            if (name == null || name == "" || name == undefined) {
+              $("#eventname").css('border-color','#dc3545');
+            }
+
+            if (state == 0 || state == "0") {
+              $("#state").css('border-color','#dc3545');
+            }
+
+            if (address == "" || address == null || address == undefined) {
+              $("#address").css('border-color','#dc3545');
+            }
+
+            if (location == "" || location == null || location == undefined) {
+              $("#location").css('border-color','#dc3545');
+            }
+
+            if (domain == "0" || domain == 0) {
+              $("#domain").css('border-color','#dc3545');
+            }
+
+            if (about == null || about == "" || about == undefined) {
+              $(".note-editable").css('border-color','#dc3545');
+            }
+            notload();
+            alert("Please fill all required fields");
+            return;
+          }
+
+
+          if (speakers == "") {
+            speakers = null;
+          }
+
+          if (partic == "") {
+            partic = null;
+          }
+ 
+
+
+
+          var obj = {"EventName":name,"StateId":state,"Address":address,"Participants":partic,"Speakers":speakers,"IframeLocation":location,"About":about,"Domain":domain,"AllowAnonymous":anon}
+
+          console.log(obj)
+          $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            url: "APILINK/TempEvent/AddTempEventGeneralInfo",
+            data: JSON.stringify(obj),
+            success: function (res) {
+
+              if (res == false) {
+                alert("Error: you have reached the limit of events you can create");
+              }
+
+              else{
+                sessionStorage.setItem("EventName",res.eventName);
+                sessionStorage.setItem("EventId",res.id);
+                window.open("CreateEvent2.html","_self");
+              }
+
+               
+            }
+          }).fail(function(){
+            notload();
+            alert("Server Error")
+         
+          })
+
+
+        })
+
+
+
+
+
+
+
+        $('#summernote').summernote({
+               toolbar: [
+                 //[groupName, [list of button]]
+                 
+                 ['style', ['bold', 'italic', 'underline', 'clear']],
+                 ['font', ['strikethrough', 'superscript', 'subscript']],
+                 ['Font Style',['fontname','fontsize','color']],
+                 ['para', ['style','ul', 'ol', 'paragraph']],
+                 ['height', ['height']],
+                 ['insert',['hr','table','link']]
+               ],
+               shortcuts: false
+              //  ,
+              //  disableDragAndDrop: true
+             });
+
+
+
+
+        })
+
+
+      })(document, window, jQuery);
+    </script>
+  </body>
+</html>

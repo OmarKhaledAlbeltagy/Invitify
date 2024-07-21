@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap admin template">
+    <meta name="author" content="">
+    
+    <title>Invitify | Invitees</title>
+    
+    <link rel="apple-touch-icon" href="../assets/images/logo.jpg">
+    <link rel="shortcut icon" href="../assets/images/fav.ico">
+    
+    <!-- Stylesheets -->
+     
+    <link rel="stylesheet" href="../global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="../assets/css/site.min.css">
+    
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../global/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="../global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="../global/vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="../global/vendor/intro-js/introjs.css">
+    <link rel="stylesheet" href="../global/vendor/slidepanel/slidePanel.css">
+    <link rel="stylesheet" href="../global/vendor/flag-icon-css/flag-icon.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../global/fonts/web-icons/web-icons.min.css">
+    <link rel="stylesheet" href="../global/fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    <link rel="stylesheet" href="../global/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="../global/fonts/material-design/material-design.min.css">
+    <link rel="stylesheet" href="../global/vendor/footable/footable.core.css">
+    <link rel="stylesheet" href="../assets/examples/css/tables/footable.css">
+    <link rel="stylesheet" href="../global/multiselect/css/multi-select.css">
+
+
+    <!--[if lt IE 9]>
+    <script src="../global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 10]>
+    <script src="../global/vendor/media-match/media.match.min.js"></script>
+    <script src="../global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Scripts -->
+    <script src="../global/vendor/breakpoints/breakpoints.js"></script>
+    <script src="https://kit.fontawesome.com/15e8ed2b84.js" crossorigin="anonymous"></script>
+    <script>
+      Breakpoints();
+    </script>
+    
+
+  
+  </head>
+  <body class="animsition site-navbar-small page-aside-fixed">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+    
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+          data-toggle="menubar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="hamburger-bar"></span>
+        </button>
+        <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
+          data-toggle="collapse">
+          <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+        </button>
+        <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+          <!-- <img class="navbar-brand-logo" src="../assets/images/logo.jpg" title="AME"> -->
+          <div class="navbar-brand-logo">Invitify</div>
+          
+        </div>
+    
+      </div>
+    
+      <div class="navbar-container container-fluid">
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+          <!-- Navbar Toolbar -->
+          <ul class="nav navbar-toolbar">
+            <li class="nav-item hidden-float" id="toggleMenubar">
+              <a class="nav-link" data-toggle="menubar" href="#" role="button">
+                <i class="icon hamburger hamburger-arrow-left">
+                  <span class="sr-only">Toggle menubar</span>
+                  <span class="hamburger-bar"></span>
+                </i>
+              </a>
+            </li>
+            <li class="nav-item hidden-sm-down" id="toggleFullscreen">
+              <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+                <span class="sr-only">Toggle fullscreen</span>
+              </a>
+            </li>
+      
+          </ul>
+          <!-- End Navbar Toolbar -->
+    
+          <!-- Navbar Toolbar Right -->
+          <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right" style="padding-right: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="scale-up" role="button">
+                  <p id="FullName"></p>
+              </a>
+              <div class="dropdown-menu" role="menu">
+       
+                <div class="dropdown-divider" role="presentation"></div>
+                <a class="dropdown-item logout" href="" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
+              </div>
+            </li>
+          </ul>
+          <!-- End Navbar Toolbar Right -->
+        </div>
+        <!-- End Navbar Collapse -->
+    
+
+      </div>
+    </nav>  
+    
+
+      <div class="site-menubar">
+        <div class="site-menubar-body">
+          <div>
+            <div>
+              <ul class="site-menu" data-plugin="menu">
+                <li class="site-menu-category">Menu</li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="Home.html">
+                    <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
+                    <span class="site-menu-title">Dashboard</span>
+                  </a>
+                </li>
+
+                <li class="dropdown site-menu-item has-sub">
+                  <a data-toggle="dropdown" href="javascript:void(0)" data-dropdown-toggle="false">
+                    <i class="site-menu-icon  fa-regular fa-calendar" aria-hidden="true"></i>
+                    <span class="site-menu-title">Events</span>
+                    <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="site-menu-scroll-wrap is-list">
+                      <div>
+                        <div>
+                          <ul class="site-menu-sub site-menu-normal-list">
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="CreateEvent1.html">
+                                <i class="fa-solid fa-calendar-plus site-menu-icon" aria-hidden="true"></i>
+                                <span class="site-menu-title">Create Event</span>
+                              </a>
+                            </li>
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="Events.html">
+                                <i class="fa-regular fa-calendar-days site-menu-icon" aria-hidden="true"></i>
+                                <span class="site-menu-title">Events List</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+                <li class="dropdown site-menu-item has-sub">
+                  <a data-toggle="dropdown" href="javascript:void(0)" data-dropdown-toggle="false">
+                    <i class="fa-solid fa-address-book site-menu-icon wb-layout" aria-hidden="true"></i>
+                    <span class="site-menu-title">Contacts</span>
+                    <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="site-menu-scroll-wrap is-list">
+                      <div>
+                        <div>
+                          <ul class="site-menu-sub site-menu-normal-list">
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="ContactType.html">
+                                <i class="fa-solid fa-users-line site-menu-icon" aria-hidden="true"></i>
+                                <span class="site-menu-title">Contact Types</span>
+                              </a>
+                            </li>   
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="Contacts.html">
+                                <i class="fa-solid fa-list site-menu-icon" aria-hidden="true"></i>
+                                <span class="site-menu-title">Contacts List</span>
+                              </a>
+                            </li> 
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+                <li class="site-menu-item active">
+                  <a class="animsition-link" href="Invitees.html">
+                    <i class="fa-solid fa-address-card site-menu-icon" aria-hidden="true"></i>
+                    <span class="site-menu-title">Invitations</span>
+                  </a>
+                </li>
+
+                
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="Properties.html">
+                    <i class="fa-solid fa-gear" aria-hidden="true"></i>
+                    <span class="site-menu-title">Properties</span>
+                  </a>
+                </li>
+
+              
+               
+                  </ul>
+                </li>
+               
+              </div>  
+            
+            </div>
+          </div>
+        </div> 
+
+
+
+            <!-- Modal -->
+       <div class="modal fade modal-danger modal-super-scaled" id="notmodal" aria-hidden="true" aria-labelledby="examplePositionTop"
+       role="dialog" tabindex="-1">
+       <div class="modal-dialog modal-simple modal-center modal-lg">
+         <div class="modal-content">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">×</span>
+             </button>
+             <h4 class="modal-title" id="exampleModalTitle">Cancel Invitees</h4>
+           </div>
+           <div class="modal-body">
+            <input type="hidden" id="cancelid">
+            <div class="row text-center">
+              <h3 class="text-center col-12 text-danger" id="noteventname"></h3>
+              <div class="col-12">
+                <h5 class="text-danger text-left">Already registered contacts are not shown here, their invitations can't be deleted once they get registered</h5>           
+              </div>
+              <div class="col-12" id="notinvv">
+           
+              </div>
+       
+              
+            </div>
+
+           </div>
+           <div class="modal-footer">
+            <button type="button" class="btn btn-danger" id="savenot">Save</button>
+             <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- End Modal -->
+
+     
+         <!-- Modal -->
+       <div class="modal fade modal-success modal-super-scaled" id="addmodal" aria-hidden="true" aria-labelledby="examplePositionTop"
+       role="dialog" tabindex="-1">
+       <div class="modal-dialog modal-simple modal-center modal-lg">
+         <div class="modal-content">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">×</span>
+             </button>
+             <h4 class="modal-title" id="exampleModalTitle">Add Invitees</h4>
+           </div>
+           <div class="modal-body">
+            <input type="hidden" id="addid">
+            <div class="row text-center">
+              <h3 class="text-center col-12 text-success" id="addeventname"></h3>
+
+              <div class="col-12" id="addinvv">
+           
+              </div>
+            </div>
+
+           </div>
+           <div class="modal-footer">
+            <button type="button" class="btn btn-success" id="saveadd">Save</button>
+             <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- End Modal -->
+
+
+          
+
+
+       
+
+
+        
+    <div class="page">
+    
+    
+      <div class="page-main">
+        <div class="page-header text-center">
+          
+        </div>
+        <div class="page-content">
+    
+
+
+    
+    
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">Events Invitees</h3>
+            </div>
+            <div class="panel-body">     
+              <div class="example-loading h-150 vertical-align text-center" id="load">
+                <div class="loader vertical-align-middle loader-round-circle"></div>
+              </div>
+
+
+              <div class="table-responsive">
+                <table class="table table-hover text-center d-none">
+                  <thead>
+                    <tr>
+                      <th>Event</th>
+                      <th>Start Date</th>
+                      <th>State</th>
+                      <th>Invitees</th>
+                      <th>Registrations</th>
+                      <th>Invitees List</th>
+                      <th class="text-primary">Download Qr Codes</th>
+                      <th class="text-success">Add New Invitees</th>
+                      <th class="text-danger">Remove Invitees</th>
+                    </tr>
+                  </thead>
+                  <tbody id="evbody">
+              
+                  </tbody>
+                </table>
+              </div>
+           
+              </div>
+         
+
+
+
+      
+
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+
+   
+    
+   
+    <footer class="site-footer">
+      <div class="site-footer-legal">© 2023 Invitify</div>
+      <div class="site-footer-right">
+        Crafted with <i class="red-600 icon md-favorite"></i> by <a href="mailto:omar.khaled.albeltagy@gmail.com?subject=Invitify Inquiry&body=%0A%0ASent from Invitify">Omar Khaled</a>
+      </div>
+    </footer>
+
+
+    <!-- Core  -->
+    <script src="../global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="../global/vendor/jquery/jquery.js"></script>
+    <script src="../global/vendor/popper-js/umd/popper.min.js"></script>
+    
+    <script src="../global/vendor/bootstrap/bootstrap.js"></script>
+    <script src="../global/vendor/animsition/animsition.js"></script>
+    <script src="../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+    <script src="../global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="../global/vendor/asscrollable/jquery-asScrollable.js"></script>
+    <script src="../global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+    <script src="../global/morris.js-0.5.1/morris.js-0.5.1/morris.js"></script>
+    <script src="../global/raphael-2.3.0/raphael.min.js"></script>
+    <!-- Plugins -->
+    <script src="../global/vendor/switchery/switchery.js"></script>
+    <script src="../global/vendor/intro-js/intro.js"></script>
+    <script src="../global/vendor/screenfull/screenfull.js"></script>
+    <script src="../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+    <script src="../global/fontawesome/js/all.min.js"></script>
+
+
+    <!-- Scripts -->
+    <script src="../global/js/Component.js"></script>
+    <script src="../global/js/Plugin.js"></script>
+    <script src="../global/js/Base.js"></script>
+    <script src="../global/js/Config.js"></script>
+    
+    <script src="../assets/js/Section/Menubar.js"></script>
+    <script src="../assets/js/Section/GridMenu.js"></script>
+    <script src="../assets/js/Section/Sidebar.js"></script>
+    <script src="../assets/js/Section/PageAside.js"></script>
+    <script src="../assets/js/Plugin/menu.js"></script>
+    
+    <script src="../global/js/config/colors.js"></script>
+    <script>Config.set('assets', '../assets');</script>
+    <script src="../global/js/Plugin/panel.js"></script>
+    
+    <!-- Page -->
+    <script src="../assets/js/Site.js"></script>
+    <script src="../global/js/Plugin/asscrollable.js"></script>
+    <script src="../global/js/Plugin/slidepanel.js"></script>
+    <script src="../global/js/Plugin/switchery.js"></script>
+    <script src="../global/vendor/sparkline/jquery.sparkline.min.js"></script>
+    <script src="../global/vendor/chartist/chartist.min.js"></script>
+    <script src="../global/vendor/matchheight/jquery.matchHeight-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="../assets/js/config/tour.js"></script>
+    <script src="../global/vendor/moment/moment.min.js"></script>
+    <script src="../global/vendor/footable/footable.min.js"></script>
+    <script src="../global/multiselect/js/jquery.multi-select.js"></script>
+    <script src="../global/QuickSearch/quicksearch.js"></script>
+    <script>
+      (function(document, window, $){
+        'use strict';
+    
+        var Site = window.Site;
+        $(document).ready(function(){
+          Site.run();
+
+          //start layout            
+          if (localStorage.getItem("userrole") !== "Admin") {
+            window.open("../notauth.html", "_self")
+          }
+
+          $("#FullName").append(localStorage.getItem("userfullname") + ' <span><i class="icon wb-chevron-down-mini" aria-hidden="true"></i></span>');
+
+          $(".logout").click(function (e) {
+          e.preventDefault();
+
+                window.localStorage.removeItem("userfullname");
+                window.localStorage.removeItem("useremail");
+                window.localStorage.removeItem("userid");
+                window.localStorage.removeItem("userrole");
+
+                window.open("../index.html", "_self");
+        });
+             //end layout
+
+
+        var list = [];
+
+
+
+        function load(){
+              $("#load").removeClass('d-none');
+              $("table").addClass('d-none');
+             }
+
+             function notload(){
+              $("#load").addClass('d-none');
+              $("table").removeClass('d-none');
+             }
+             
+
+
+
+
+
+          $.ajax({
+            url:"APILINK/Invitation/GetInviteesData",
+            success:function(res){
+              list = res;
+
+            }
+          }).then(function(){
+            $.ajax({
+              url:"APILINK/Event/GetAllEvents",
+              success:function(ress){
+                console.log(ress)
+             
+                $.each(ress,function(){
+                  var idd = '<span class="d-none">'+this.id+'</span>';
+                 
+                  var invitedd = list.filter(a=>a.eventId == this.id)[0].numberOfInvitees;
+                  var notinvitedd = list.filter(a=>a.eventId == this.id)[0].notInvited.length;
+                  var reg  = list.filter(a=>a.eventId == this.id)[0].numberOfRegistrations;
+                  
+
+                  if (invitedd == 0) {
+                    var listbtn = '<input type="button" class="btn btn-dark list" value="Invitees List" disabled="">'+idd+'<span class="d-none">'+this.eventName+'</span>';
+                    var qrbtn = '<input type="button" class="btn btn-primary qr" value="Download Qr Codes">'+idd+'';
+                    var removebtn = '<input type="button" class="btn btn-danger reminvbtn" value="Remove Invitees" disabled="">'+idd+'<span class="d-none">'+this.eventName+'</span>';
+                  }
+                  else
+                  {
+                    var listbtn = '<input type="button" class="btn btn-dark list" value="Invitees List">'+idd+'<span class="d-none">'+this.eventName+'</span>';
+                    var qrbtn = '<input type="button" class="btn btn-primary qr" value="Download Qr Codes">'+idd+'';
+                    var removebtn = '<input type="button" class="btn btn-danger reminvbtn" value="Remove Invitees">'+idd+'<span class="d-none">'+this.eventName+'</span>';
+                  }
+
+
+                  if (notinvitedd == 0) {
+                    var addbtn = '<input type="button" class="btn btn-success invbtn" value="Add New Invitees" disabled="">'+idd+'<span class="d-none">'+this.eventName+'</span>';
+                  }
+                  else{
+                    var addbtn = '<input type="button" class="btn btn-success invbtn" value="Add New Invitees">'+idd+'<span class="d-none">'+this.eventName+'</span>';
+                  }
+
+
+
+
+
+                  $("#evbody").append('<tr><td>'+this.eventName+'</td><td>'+this.startDate+'</td><td>'+this.stateName+'</td><td>'+invitedd+'</td><td>'+reg+'</td><td>'+listbtn+'</td><td>'+qrbtn+'</td><td>'+addbtn+'</td><td>'+removebtn+'</td></tr>')
+                })
+                notload();
+              }
+            })
+          })
+
+
+
+          $("#addinvv").on('change','#addinvs',function(){
+            $("#saveadd").removeAttr('disabled')
+          })
+
+          $("#notinvv").on('change','#notinvs',function(){
+            $("#savenot").removeAttr('disabled')
+          })
+
+
+          $("#evbody").on('click','.reminvbtn',function(){
+            $("#thiss").removeAttr("id");
+            $(this).parent().parent().attr("id","thiss");
+            $("#savenot").attr('disabled','')
+            $("#notinvv").children().remove();
+            var id = $(this).next().text();
+            var name = $(this).next().next().text();
+            $("#cancelid").val(id)
+            var data = list.filter(a=>a.eventId == id)[0];
+
+            $("#noteventname").text(name)
+
+            $("#notinvv").html('<select multiple="multiple" id="notinvs"></select>')
+
+            $.each(data.invited,function(){
+              $('#notinvs').append('<option value="'+this.id+'">'+this.contactName+'</option>')
+            })
+
+ 
+
+            $('#notinvs').multiSelect({
+              selectableHeader: '<div class="text-center text-success" style="font-weight:bold;">Invited<div>',
+              selectionHeader: '<div class="text-center text-danger" style="font-weight:bold;">Not Invited<div>',
+              selectableFooter:'<br><input type="button" class="btn btn-danger" value="Cancel All" id="cancelall">',
+              selectionFooter:'<br><input type="button" class="btn btn-success" value="Return All" id="notcancelall">',
+              keepOrder:true
+            })
+
+            $("#notmodal").modal('show')
+          })
+
+
+
+          $("#evbody").on('click','.invbtn',function(){
+            $("#thiss").removeAttr("id");
+            $(this).parent().parent().attr("id","thiss");
+            $("#saveadd").attr('disabled','');
+            $("#addinvv").children().remove();
+            var id = $(this).next().text();
+            var name = $(this).next().next().text();
+            $("#addid").val(id)
+            var data = list.filter(a=>a.eventId == id)[0];
+
+            $("#addeventname").text(name);
+
+            $("#addinvv").html('<select multiple="multiple" id="addinvs"></select>');
+
+            $.each(data.notInvited,function(){
+              $('#addinvs').append('<option value="'+this.id+'">'+this.contactName+'</option>')
+            })
+
+ 
+
+            $('#addinvs').multiSelect({
+              selectableHeader: '<div class="text-center text-danger" style="font-weight:bold;">Not Invited<div>',
+              selectionHeader: '<div class="text-center text-success" style="font-weight:bold;">Invited<div>',
+              selectableFooter:'<br><input type="button" class="btn btn-success" value="Invite All" id="invall">',
+              selectionFooter:'<br><input type="button" class="btn btn-danger" value="Cancel All" id="notinvall">',
+              keepOrder:true
+            })
+
+            $("#addmodal").modal('show');
+          })
+
+
+
+
+
+          $("#addinvv").on('click','#invall',function(){
+            $('#addinvs').multiSelect('select_all');
+          })
+
+
+          $("#addinvv").on('click','#notinvall',function(){
+            $('#addinvs').multiSelect('deselect_all');
+          })
+
+
+
+
+          $("#notinvv").on('click','#cancelall',function(){
+            $('#notinvs').multiSelect('select_all');
+          })
+
+
+          $("#notinvv").on('click','#notcancelall',function(){
+            $('#notinvs').multiSelect('deselect_all');
+          })
+
+
+
+          $("#saveadd").click(function () {
+            $("#addmodal").modal('hide')
+            load();
+            var EventId = $("#addid").val();
+            var ids = [];
+
+            $.each($("#addinvs").children('option:Selected'), function () {
+              ids.push($(this).val())
+            })
+
+
+
+
+
+            var obj = { "EventId": EventId, "ContactsId": ids };
+
+
+            $.ajax({
+              type: "POST",
+              contentType: "application/json",
+              url: "APILINK/Invitation/AddToInvitees",
+              data: JSON.stringify(obj),
+              success: function (res) {
+                if (res == true) {
+                  $.ajax({
+                    url: "APILINK/Invitation/GetInviteesData",
+                    success: function (res) {
+                      list = res;
+   
+          
+                      var invitedd = res.filter(a=>a.eventId == EventId)[0].invited.length;
+                      var notinvitedd = res.filter(a=>a.eventId == EventId)[0].notInvited.length;
+                      var tr = $("#thiss");
+                      tr.children('td').first().next().next().next().text(invitedd);
+
+                      var listbtnn = tr.children().first('td').next().next().next().next().next().children('input');
+                      var qrbtnn = tr.children().first('td').next().next().next().next().next().next().children('input');
+                      var addbtnn = tr.children().first('td').next().next().next().next().next().next().next().children('input');
+                      var rembtnn = tr.children().first('td').next().next().next().next().next().next().next().next().children('input');
+
+                      listbtnn.removeAttr("disabled");
+         
+                      rembtnn.removeAttr("disabled");
+
+
+                      if (parseInt(notinvitedd) == 0) {
+                        addbtnn.attr('disabled','');
+                      }
+                      else{
+                        addbtnn.removeAttr('disabled');
+                      }
+
+                      $("#thiss").removeAttr("id");
+                      notload();
+
+                    }
+                  })
+                }
+              }
+            })
+
+
+          })
+
+
+          $("#savenot").click(function(){
+            $("#notmodal").modal('hide')
+            load();
+            var EventId = $("#cancelid").val();
+            var ids = [];
+
+            $.each($("#notinvs").children('option:Selected'),function(){
+              ids.push($(this).val())
+            })
+
+            var obj = {"EventId":EventId,"ContactsId":ids};
+
+
+            
+            $.ajax({
+              type: "POST",
+              contentType: "application/json",
+              url: "APILINK/Invitation/RemoveFromInvitees",
+              data: JSON.stringify(obj),
+              success: function (res) {
+                if (res == true) {
+                  $.ajax({
+                    url: "APILINK/Invitation/GetInviteesData",
+                    success: function (res) {
+                      list = res;
+               
+                      var invitedd = res.filter(a=>a.eventId == EventId)[0].invited.length;
+                      var notinvitedd = res.filter(a=>a.eventId == EventId)[0].notInvited.length;
+               
+                  
+                      var tr = $("#thiss");
+                      tr.children('td').first().next().next().next().text(invitedd);
+
+
+                      var listbtnn = tr.children().first('td').next().next().next().next().next().children('input');
+                      var qrbtnn = tr.children().first('td').next().next().next().next().next().next().children('input');
+                      var addbtnn = tr.children().first('td').next().next().next().next().next().next().next().children('input');
+                      var rembtnn = tr.children().first('td').next().next().next().next().next().next().next().next().children('input');
+
+                      addbtnn.removeAttr("disabled");
+          
+                      if (parseInt(invitedd) == 0) {
+              
+                        listbtnn.attr("disabled","");
+                        rembtnn.attr("disabled","");
+                      }
+
+                      else{
+                        listbtnn.removeAttr("disabled");
+           
+                        rembtnn.removeAttr("disabled");
+                      }
+
+
+                      
+
+
+                 
+
+
+                      $("#thiss").removeAttr("id");
+                      notload();
+
+                    }
+                  })
+                }
+              }
+            })
+
+
+          })
+
+
+
+
+
+
+
+
+          $("#evbody").on('click','.qr',function(){
+            var id = $(this).next().text();
+            
+            window.open("APILINK/Invitation/DownloadEventQrs/"+id)
+          })
+
+
+
+          $("#evbody").on("click",'.list',function(){
+            var id = $(this).next().text();
+            var EventName = $(this).next().next().text();
+            window.open("InviteesList.html?"+id+"&"+EventName,"_self");
+
+          })
+
+
+
+       
+          
+
+
+        })
+
+
+
+
+
+
+
+      })(document, window, jQuery);
+    </script>
+  </body>
+</html>

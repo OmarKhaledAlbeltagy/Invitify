@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "instascan": "^1.0.0",
+    "jsprintmanager": "^6.0.1"
+  }
+}

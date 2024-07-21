@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Roboto:400,700&display=swap"
+		rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Conference Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="demos/conference/css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="css/colors.php?color=222" type="text/css" />
+	<link rel="stylesheet" href="demos/conference/conference.css" type="text/css" />
+	<!-- / -->
+
+	<!-- Document Title
+	============================================= -->
+	<title>TED | Registration Platform</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="responsive-sticky-header transparent-header dark header-size-sm"
+			data-sticky-shrink="false">
+			<div id="header-wrap">
+				<div class="container">
+					<div class="header-row justify-content-lg-between">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo" class="me-lg-0">
+							<a href="#" data-scrollto="#slider" class="standard-logo"
+								data-dark-logo="demos/conference/images/logotranss.png"><img
+									src="demos/conference/images/logotranss.png" alt="Canvas Logo"></a>
+							<a href="#" data-scrollto="#slider" class="retina-logo"
+								data-dark-logo="demos/conference/images/logotranss.png"><img
+									src="demos/conference/images/logotranss.png" alt="Canvas Logo"></a>
+						</div><!-- #logo end -->
+
+						<div id="primary-menu-trigger">
+							<svg class="svg-trigger" viewBox="0 0 100 100">
+								<path
+									d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
+								</path>
+								<path d="m 30,50 h 40"></path>
+								<path
+									d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
+								</path>
+							</svg>
+						</div>
+
+					
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+		
+		<!-- Hero/Slider
+		============================================= -->
+		<section id="slider" class="slider-element min-vh-60 min-vh-md-100 include-header"
+			style="background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.8)), url('demos/conference/images/about/Tourism-Innovators-Conference-Background.png') no-repeat center center / cover;">
+			<div class="slider-inner">
+
+				<div class="vertical-middle">
+					<div class="container dark py-5 py-md-0">
+						<div class="row justify-content-between mt-5 col-mb-50">
+							<div class="col-lg-6 parallax" data-0="transform: translateY(0px); opacity: 1"
+								data-300="transform: translateY(50px); opacity: 0" id="hea">
+							
+								<h1 id="name"></h1>
+									<h3 style="color: white;">The QR Code you just scanned is made for TEOXANE Academy conference organizers to verify your attendance</h3>
+									<a id="go" class="button button-large button-white button-gradient m-0">Go To Your Registration Page</a>
+
+							</div>
+						
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section><!-- #Slider end -->
+
+			<div class="clear"></div>
+
+
+
+	
+
+		
+
+			</div>
+		</section><!-- #content end -->
+
+	
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+	<!-- <script src="https://maps.google.com/maps/api/js?key=YOUR-API-KEY"></script> -->
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+
+
+
+
+	<script>
+		(function (document, window, $) {
+			'use strict';
+			$(document).ready(function () {
+
+
+
+
+
+
+
+
+			
+
+
+
+				var g = window.location.search.substring(1);
+
+				$.ajax({
+					url:"APILINK/Ted/GetDoctorName/"+g,
+					success:function(res){
+						$("#name").html('Welcome <br> <span>Dr. '+res+'');
+					}
+				})
+
+
+
+
+				$("#go").click(function(){
+					window.open('index.html?'+g,"_self");
+;				})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			});
+
+		})(document, window, jQuery);
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "4om1frNcQEBuL4Ib8PHS9YkMpgkW4ModOBSQSwjdDyA=",
+  "Source": "Invitify",
+  "BasePath": "_content/Invitify",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Invitify\\wwwroot",
+      "Source": "Invitify",
+      "ContentRoot": "C:\\AAA\\Development\\Invitify\\Backend\\Invitify\\Invitify\\wwwroot\\",
+      "BasePath": "_content/Invitify",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
